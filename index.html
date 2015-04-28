@@ -23,10 +23,12 @@
           <a ng-href="{{user.html_url}}">{{user.login}}</a>
         </li>
       </ul>
-        <li class="list-group-item">
+        <ul class="list-group-item" id="pastSearches">
          <!--  <img src="https://avatars.githubusercontent.com/u/469160?v=3&s=50">
           <a href="https://github.com/antonydenyer">antonydenyer</a> -->
-        </li>
+          <li>
+            <div>{{searchCtrl.printResults}}</div>
+          </li>
  <!--        <li class="list-group-item">
           <img src="https://avatars.githubusercontent.com/u/30216?v=3&s=50">
           <a href="https://github.com/tansaku">tansaku</a>
