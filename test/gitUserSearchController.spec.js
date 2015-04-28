@@ -34,6 +34,8 @@ describe('when searching for a user', function(){
   ];
 
   it('display search results', function(){
+    ctrl.searchTerm = 'hello';
+    ctrl.doSearch();
     expect(ctrl.searchResult.items).toEqual(items);
   });
 
