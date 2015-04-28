@@ -10,7 +10,8 @@ githubUserSearch.controller('GitUserSearchController', ['$resource',function($re
     self.searchResult = searchResource.get( 
       { q : self.searchTerm } 
       );
-    this.pastSearch.push(" " + self.searchTerm)
+    if (typeof self.searchTerm != "undefined"){
+      this.pastSearch.push(" " + self.searchTerm) } 
     this.printResults = this.pastSearch.toString();
   };
 }]);
